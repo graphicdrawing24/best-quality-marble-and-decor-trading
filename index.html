@@ -20,7 +20,6 @@ nav{display:flex;gap:22px;font-size:13px;color:#ddd}nav a:hover{color:var(--gold
 footer{padding:28px 0;color:#888;font-size:12px}.rtl{direction:rtl;text-align:right}.rtl nav{direction:rtl}.rtl .brand{text-align:right}.rtl .heroInner,.rtl .sectionHead{margin-left:auto}.rtl .buttons{justify-content:flex-start}
 @media(max-width:800px){nav{display:none}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.contactbox{grid-template-columns:1fr}.hero{min-height:85vh}.hero h1{font-size:52px}.section{padding:65px 0}}
 </style>
-</head>
 <style>
   div[class*="netlify"], 
   div[id*="netlify"], 
@@ -43,7 +42,8 @@ footer{padding:28px 0;color:#888;font-size:12px}.rtl{direction:rtl;text-align:ri
     }, 500);
   });
 </script>
- <body>
+</head>
+<body>
 <header><div class="wrap nav">
 <a class="brand" href="#">
 <img src="Best Quality Marble.png" alt="Logo" style="height: 40px; width: auto; margin-right: 10px;">
@@ -52,6 +52,7 @@ footer{padding:28px 0;color:#888;font-size:12px}.rtl{direction:rtl;text-align:ri
 <nav>
 <a href="#about" data-en="About" data-ar="من نحن">About</a>
 <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
+<a href="#products" data-en="Products" data-ar="منتجاتنا">Products</a>
 <a href="#gallery" data-en="Gallery" data-ar="المعرض">Gallery</a>
 <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
 </nav>
@@ -78,7 +79,7 @@ data-ar="تقدم شركة بست كوالتي لتجارة الرخام وال�
 </div></section>
 
 <section class="section" id="services"><div class="wrap">
-<div class="eyebrow" data-en="Our Services" data-ar="منتجاتنا وخدماتنا">Our Services</div>
+<div class="eyebrow" data-en="Our Services" data-ar="خدماتنا">Our Services</div>
 <h2 data-en="Materials for every vision." data-ar="مواد تناسب كل رؤية.">Materials for every vision.</h2><div class="goldline"></div>
 <div class="grid">
 <div class="card"><h3>Marble</h3><p data-en="Elegant marble selections for floors, walls, kitchens and feature spaces." data-ar="اختيارات فاخرة من الرخام للأرضيات والجدران والمطابخ والمساحات المميزة.">Elegant marble selections for floors, walls, kitchens and feature spaces.</p></div>
@@ -88,6 +89,109 @@ data-ar="تقدم شركة بست كوالتي لتجارة الرخام وال�
 <div class="card"><h3>Sanitary</h3><p data-en="Stylish sanitary solutions that complete modern bathrooms." data-ar="حلول صحية أنيقة تكمل الحمامات العصرية.">Stylish sanitary solutions that complete modern bathrooms.</p></div>
 <div class="card"><h3>Interior Decor</h3><p data-en="Wall panels, textures and decorative finishes for statement interiors." data-ar="ألواح جدارية وملمس وتشطيبات ديكورية لتصميمات داخلية مميزة.">Wall panels, textures and decorative finishes for statement interiors.</p></div>
 </div></div></section>
+
+<!-- PRODUCTS SECTION -->
+<section class="section" id="products" style="background: rgba(28, 37, 65, 0.3); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="eyebrow" data-en="Product Range" data-ar="تشكيلة المنتجات">Product Range</div>
+    <h2 data-en="Explore Our Products" data-ar="استكشف منتجاتنا">Explore Our Products</h2>
+    <div class="goldline"></div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 18px; margin-top: 30px;">
+      
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400" alt="Marble" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="MARBLE" data-ar="رخام">MARBLE</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400" alt="Tiles" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="TILES" data-ar="بلاط">TILES</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=400" alt="Parquet Flooring" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="PARQUET FLOORING" data-ar="باركيه أرضيات">PARQUET FLOORING</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1534349735944-2b3a6f7a268f?w=400" alt="Panels" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="PANELS" data-ar="ألواح ديكور">PANELS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=400" alt="Wallpaper" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="WALLPAPER" data-ar="ورق جدران">WALLPAPER</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?w=400" alt="Doors" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="DOORS" data-ar="أبواب">DOORS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400" alt="Lights" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="LIGHTS & ACCESSORIES" data-ar="إضاءة وإكسسوارات">LIGHTS & ACCESSORIES</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400" alt="Wash Basins" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="WASH BASINS" data-ar="أحواض غسيل">WASH BASINS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?w=400" alt="Bathroom Taps" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="BATHROOM TAPS" data-ar="খلاطات حمامات">BATHROOM TAPS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1585412727339-54e4ba3bbf93?w=400" alt="Shower Sets" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="SHOWER SETS" data-ar="أطقم دش">SHOWER SETS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400" alt="Toilets" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="TOILETS" data-ar="حمامات">TOILETS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400" alt="Kitchen Sinks" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="KITCHEN SINKS" data-ar="أحواض مطبخ">KITCHEN SINKS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=400" alt="Kitchen Mixers" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="KITCHEN MIXERS" data-ar="خلاطات مطبخ">KITCHEN MIXERS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?w=400" alt="Bathtubs" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="BATHTUBS" data-ar="হوض استحمام">BATHTUBS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=400" alt="Decor Accents" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="DECOR ACCENTS" data-ar="إكسسوارات ديكور">DECOR ACCENTS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=400" alt="Wall Cladding" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="WALL CLADDING" data-ar="تكسية جدران">WALL CLADDING</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400" alt="Granite Slabs" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="GRANITE SLABS" data-ar="ألواح جرانيت">GRANITE SLABS</h4>
+      </div>
+
+      <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px;">
+        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400" alt="Porcelain Tiles" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <h4 style="color: var(--cream); margin-top: 10px; font-size: 14px;" data-en="PORCELAIN TILES" data-ar="بورسلان">PORCELAIN TILES</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <section class="section" id="gallery"><div class="wrap">
 <div class="eyebrow" data-en="Showroom" data-ar="المعرض">Showroom</div>
@@ -121,7 +225,7 @@ function setLang(){
 btn.onclick=()=>{ar=!ar;setLang()};
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
-   <style>
+<style>
   html body netlify-drawer,
   html body [data-netlify-deploy-id],
   html body #netlify-badge,
@@ -146,4 +250,5 @@ document.getElementById('year').textContent=new Date().getFullYear();
   };
   setInterval(hideNetlify, 300);
 </script>
-</body></html>
+</body>
+</html>
