@@ -15,10 +15,9 @@ nav{display:flex;gap:22px;font-size:13px;color:#ddd}nav a:hover{color:var(--gold
 .hero{min-height:94vh;padding-top:76px;display:grid;align-items:end;background:linear-gradient(90deg,rgba(0,0,0,.86),rgba(0,0,0,.38)),url("showroom-1.jpeg") center/cover}
 .heroInner{padding:100px 0 85px;max-width:760px}.eyebrow{color:var(--gold);letter-spacing:3px;font-size:12px;text-transform:uppercase}.hero h1{font-family:Georgia,serif;font-size:clamp(44px,7vw,82px);line-height:.98;margin:16px 0}.hero p{font-size:18px;line-height:1.7;color:#ddd;max-width:650px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:14px 22px;border-radius:3px;border:1px solid var(--gold);font-weight:700;font-size:13px}.primary{background:var(--gold);color:#111}.section{padding:90px 0}.section h2{font:42px Georgia,serif;margin:8px 0 15px}.lead{color:var(--muted);max-width:700px;line-height:1.8}.goldline{height:2px;width:55px;background:var(--gold);margin:12px 0 24px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.card{background:var(--card);border:1px solid var(--line);padding:28px;min-height:175px}.card h3{margin:0 0 12px;color:var(--gold);font-size:19px}.card p{color:var(--muted);line-height:1.65;font-size:14px}
-.gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:14px;margin-top:40px}.gallery img{width:100%;height:100%;min-height:250px;object-fit:cover;border:1px solid var(--line)}.gallery .tall{grid-row:span 2}
 .contact{background:linear-gradient(135deg,#171511,#0e0e0e);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.contactbox{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.contactitem{padding:16px 0;border-bottom:1px solid var(--line)}.contactitem b{display:block;color:var(--gold);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:7px}
 footer{padding:28px 0;color:#888;font-size:12px}.rtl{direction:rtl;text-align:right}.rtl nav{direction:rtl}.rtl .brand{text-align:right}.rtl .heroInner,.rtl .sectionHead{margin-left:auto}.rtl .buttons{justify-content:flex-start}
-@media(max-width:800px){nav{display:none}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.contactbox{grid-template-columns:1fr}.hero{min-height:85vh}.hero h1{font-size:52px}.section{padding:65px 0}}
+@media(max-width:800px){nav{display:none}.grid{grid-template-columns:1fr}.contactbox{grid-template-columns:1fr}.hero{min-height:85vh}.hero h1{font-size:52px}.section{padding:65px 0}}
 </style>
 <style>
   div[class*="netlify"], 
@@ -53,7 +52,6 @@ footer{padding:28px 0;color:#888;font-size:12px}.rtl{direction:rtl;text-align:ri
 <a href="#about" data-en="About" data-ar="من نحن">About</a>
 <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
 <a href="#products" data-en="Products" data-ar="منتجاتنا">Products</a>
-<a href="#gallery" data-en="Gallery" data-ar="المعرض">Gallery</a>
 <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
 </nav>
 <button class="lang" id="langBtn">العربية</button>
@@ -129,9 +127,9 @@ data-ar="تقدم شركة بست كوالتي لتجارة الرخام وال�
         <h4 style="color: var(--cream); margin-top: 10px; font-size: 13px; font-weight: 700;" data-en="WALLPAPER" data-ar="ورق جدران">WALLPAPER</h4>
       </div>
 
-      <!-- 6. DOORS -->
+      <!-- 6. DOORS (FIXED IMAGE) -->
       <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-        <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=400&q=80" alt="DOORS" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <img src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?auto=format&fit=crop&w=400&q=80" alt="DOORS" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
         <h4 style="color: var(--cream); margin-top: 10px; font-size: 13px; font-weight: 700;" data-en="DOORS" data-ar="أبواب">DOORS</h4>
       </div>
 
@@ -147,9 +145,9 @@ data-ar="تقدم شركة بست كوالتي لتجارة الرخام وال�
         <h4 style="color: var(--cream); margin-top: 10px; font-size: 13px; font-weight: 700;" data-en="WASH BASINS" data-ar="أحواض غسيل">WASH BASINS</h4>
       </div>
 
-      <!-- 9. BATHROOM TAPS & MIXERS -->
+      <!-- 9. BATHROOM TAPS & MIXERS (FIXED IMAGE) -->
       <div style="background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; text-align: center; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-        <img src="https://images.unsplash.com/photo-1585412727339-54e4ba3bbf93?auto=format&fit=crop&w=400&q=80" alt="BATHROOM TAPS & MIXERS" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
+        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" alt="BATHROOM TAPS & MIXERS" style="width: 100%; height: 130px; object-fit: cover; border-radius: 6px;">
         <h4 style="color: var(--cream); margin-top: 10px; font-size: 11px; font-weight: 700;" data-en="BATHROOM TAPS & MIXERS" data-ar="خلاطات حمامات">BATHROOM TAPS & MIXERS</h4>
       </div>
 
@@ -210,15 +208,6 @@ data-ar="تقدم شركة بست كوالتي لتجارة الرخام وال�
     </div>
   </div>
 </section>
-
-<section class="section" id="gallery"><div class="wrap">
-<div class="eyebrow" data-en="Showroom" data-ar="المعرض">Showroom</div>
-<h2 data-en="Explore our collection." data-ar="اكتشف مجموعتنا.">Explore our collection.</h2><div class="goldline"></div>
-<div class="gallery">
-<img class="tall" src="showroom-2.jpeg" alt="Best Quality showroom">
-<img src="showroom-3.jpeg" alt="Interior materials display">
-<img src="showroom-4.jpeg" alt="Best Quality storefront">
-</div></div></section>
 
 <section class="section contact" id="contact"><div class="wrap contactbox">
 <div><div class="eyebrow" data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</div><h2 data-en="Let's build something beautiful." data-ar="لنصنع مساحة جميلة معًا.">Let's build something beautiful.</h2><div class="goldline"></div><p class="lead" data-en="Contact us for product enquiries, project requirements, showroom visits and quotations." data-ar="تواصل معنا للاستفسارات عن المنتجات ومتطلبات المشاريع وزيارة المعرض والحصول على عروض الأسعار.">Contact us for product enquiries, project requirements, showroom visits and quotations.</p></div>
