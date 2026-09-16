@@ -21,7 +21,29 @@ footer{padding:28px 0;color:#888;font-size:12px}.rtl{direction:rtl;text-align:ri
 @media(max-width:800px){nav{display:none}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.contactbox{grid-template-columns:1fr}.hero{min-height:85vh}.hero h1{font-size:52px}.section{padding:65px 0}}
 </style>
 </head>
-<body>
+<style>
+  div[class*="netlify"], 
+  div[id*="netlify"], 
+  iframe[src*="netlify"],
+  [data-netlify-deploy-id] {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+</style>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    setInterval(() => {
+      document.querySelectorAll('div, iframe, a').forEach(el => {
+        if (el.textContent.includes('Powered by Netlify') || el.id.includes('netlify') || el.className.includes('netlify')) {
+          el.remove();
+        }
+      });
+    }, 500);
+  });
+</script>
+ <body>
 <header><div class="wrap nav">
 <a class="brand" href="#">
 <img src="Best Quality Marble.png" alt="Logo" style="height: 40px; width: auto; margin-right: 10px;">
