@@ -121,4 +121,29 @@ function setLang(){
 btn.onclick=()=>{ar=!ar;setLang()};
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>
+   <style>
+  html body netlify-drawer,
+  html body [data-netlify-deploy-id],
+  html body #netlify-badge,
+  iframe[src*="netlify"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+</style>
+<script>
+  const hideNetlify = () => {
+    document.querySelectorAll('netlify-drawer, [data-netlify-deploy-id], #netlify-badge').forEach(el => el.remove());
+    document.querySelectorAll('*').forEach(el => {
+      if (el.shadowRoot) {
+        const badge = el.shadowRoot.querySelector('.badge, .drawer, wrapper');
+        if (badge) badge.remove();
+      }
+    });
+  };
+  setInterval(hideNetlify, 300);
+</script>
 </body></html>
