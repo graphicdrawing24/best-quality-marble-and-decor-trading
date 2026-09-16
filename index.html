@@ -24,7 +24,14 @@ footer{padding:28px 0;color:#888;font-size:12px}.rtl{direction:rtl;text-align:ri
 .product-card img{width:100%;height:140px;object-fit:cover;border-radius:6px;background-color:#0a1128;}
 .product-card h4{color:var(--cream);margin:12px 0 4px;font-size:12px;font-weight:700;line-height:1.3;letter-spacing:0.5px;}
 
-@media(max-width:800px){nav{display:none}.grid{grid-template-columns:1fr}.contactbox{grid-template-columns:1fr}.hero{min-height:85vh}.hero h1{font-size:52px}.section{padding:65px 0}.product-grid{grid-template-columns:repeat(2, 1fr);gap:12px;}}
+/* OWNER SECTION STYLES */
+.owner-card{display:grid;grid-template-columns:260px 1fr;gap:35px;align-items:center;background:var(--card);border:1px solid var(--line);padding:35px;border-radius:12px;margin-top:30px;}
+.owner-card img{width:100%;height:290px;object-fit:cover;border-radius:10px;border:2px solid var(--gold);}
+.owner-info h3{font-size:28px;margin:0 0 5px;color:var(--cream);}
+.owner-info .title{color:var(--gold);font-weight:600;font-size:15px;margin-bottom:18px;display:block;}
+.owner-info p{color:var(--muted);line-height:1.7;font-size:15px;margin-bottom:20px;}
+
+@media(max-width:800px){nav{display:none}.grid{grid-template-columns:1fr}.contactbox{grid-template-columns:1fr}.hero{min-height:85vh}.hero h1{font-size:52px}.section{padding:65px 0}.product-grid{grid-template-columns:repeat(2, 1fr);gap:12px;}.owner-card{grid-template-columns:1fr;text-align:center;padding:25px;}.owner-card img{max-width:220px;height:240px;margin:0 auto;}}
 </style>
 </head>
 <body>
@@ -35,6 +42,7 @@ footer{padding:28px 0;color:#888;font-size:12px}.rtl{direction:rtl;text-align:ri
 </a>
 <nav>
 <a href="#about" data-en="About" data-ar="من نحن">About</a>
+<a href="#leadership" data-en="Leadership" data-ar="القيادة">Leadership</a>
 <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
 <a href="#products" data-en="Products" data-ar="منتجاتنا">Products</a>
 <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
@@ -62,13 +70,38 @@ data-ar="الرخام والجرانيت والبلاط والبورسلان و�
 data-ar="تقدم شركة بست كوالتي لتجارة الرخام والديكور مواد فاخرة وحلولاً تركز على التصميم للمنازل والفلل والمكاتب والضيافة والمشاريع التجارية.">Best Quality Marble and Decor Trading provides premium materials and design-focused solutions for homes, villas, offices, hospitality and commercial projects.</p></div>
 </div></section>
 
+<!-- OWNER / LEADERSHIP SECTION -->
+<section class="section" id="leadership" style="background: rgba(28, 37, 65, 0.3); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+  <div class="wrap">
+    <div class="eyebrow" data-en="Leadership & Vision" data-ar="القيادة والرؤية">Leadership & Vision</div>
+    <h2 data-en="Message from the Management" data-ar="رسالة الإدارة">Message from the Management</h2>
+    <div class="goldline"></div>
+    
+    <div class="owner-card">
+      <img src="owner pic.jpeg" alt="Arif Abdur Rahim">
+      <div class="owner-info">
+        <h3>Arif Abdur Rahim</h3>
+        <span class="title" data-en="Owner & Managing Director" data-ar="المالك والمدير العام">Owner & Managing Director</span>
+        <p data-en="With years of dedicated expertise in material sourcing and interior decor solutions, Arif Abdur Rahim leads Best Quality Marble & Decor Trading with a commitment to excellence, precision, and customer satisfaction across the UAE." 
+           data-ar="مع سنوات من الخبرة المكرسة في توريد المواد وحلول الديكور الداخلي، يقود عارف عبد الرحيم شركة بست كوالتي لتجارة الرخام والديكور مع التزام تام بالتميز والدقة ورضا العملاء في جميع أنحاء الإمارات العربية المتحدة.">
+           With years of dedicated expertise in material sourcing and interior decor solutions, Arif Abdur Rahim leads Best Quality Marble & Decor Trading with a commitment to excellence, precision, and customer satisfaction across the UAE.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="tel:+971564433370" data-en="Direct Contact: +971 56 443 3370" data-ar="اتصال مباشر: 0564433370">+971 56 443 3370</a>
+          <a class="btn" href="https://wa.me/971564433370" target="_blank" data-en="WhatsApp" data-ar="واتساب">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="services"><div class="wrap">
 <div class="eyebrow" data-en="Our Services" data-ar="خدماتنا">Our Services</div>
 <h2 data-en="Materials for every vision." data-ar="مواد تناسب كل رؤية.">Materials for every vision.</h2><div class="goldline"></div>
 <div class="grid">
 <div class="card"><h3>Marble</h3><p data-en="Elegant marble selections for floors, walls, kitchens and feature spaces." data-ar="اختيارات فاخرة من الرخام للأرضيات والجدران والمطابخ والمساحات المميزة.">Elegant marble selections for floors, walls, kitchens and feature spaces.</p></div>
 <div class="card"><h3>Granite</h3><p data-en="Durable and sophisticated granite for high-performance surfaces." data-ar="جرانيت متين وأنيق للأسطح العملية والفاخرة.">Durable and sophisticated granite for high-performance surfaces.</p></div>
-<div class="card"><h3>Tiles</h3><p data-en="Modern styles and textures for residential and commercial interiors." data-ar="أنماط وملمس عصري للمساحات السكنية والتجارية.">Modern styles and textures for residential and commercial interiors.</p></div>
+<div class="card"><h3>Tiles</h3><p data-en="Modern styles and textures for residential and commercial interiors." data-ar="أنماط وملمس عصري للمساحات السکنية والتجارية.">Modern styles and textures for residential and commercial interiors.</p></div>
 <div class="card"><h3>Porcelain</h3><p data-en="Premium porcelain options with refined finishes and contemporary looks." data-ar="خيارات بورسلان فاخرة بتشطيبات راقية ومظهر عصري.">Premium porcelain options with refined finishes and contemporary looks.</p></div>
 <div class="card"><h3>Sanitary</h3><p data-en="Stylish sanitary solutions that complete modern bathrooms." data-ar="حلول صحية أنيقة تكمل الحمامات العصرية.">Stylish sanitary solutions that complete modern bathrooms.</p></div>
 <div class="card"><h3>Interior Decor</h3><p data-en="Wall panels, textures and decorative finishes for statement interiors." data-ar="ألواح جدارية وملمس وتشطيبات ديكورية لتصميمات داخلية مميزة.">Wall panels, textures and decorative finishes for statement interiors.</p></div>
@@ -209,6 +242,7 @@ data-ar="تقدم شركة بست كوالتي لتجارة الرخام وال�
     <div style="display: flex; flex-direction: column; gap: 6px; margin-top: 4px;">
       <a href="https://wa.me/971522872071" target="_blank" style="color: var(--gold);">Raihan: +971 52 287 2071</a>
       <a href="https://wa.me/971522082494" target="_blank" style="color: var(--gold);">Rakib: +971 52 208 2494</a>
+      <a href="https://wa.me/971564433370" target="_blank" style="color: var(--gold);">Arif (Owner): +971 56 443 3370</a>
     </div>
   </div>
   <div class="contactitem">
